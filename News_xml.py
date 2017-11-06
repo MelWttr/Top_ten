@@ -25,7 +25,7 @@ def get_info(xml_file):
     return description
 
 
-def string_parsing(text):   # Убирает пунктуацию из текста
+def string_parsing(text):     # Убирает пунктуацию из текста
     text = re.sub("<br>", "", text)
     regexp = '[{}]*'.format(string.punctuation)
     return re.sub(regexp, "", text)
